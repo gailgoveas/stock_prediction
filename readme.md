@@ -88,12 +88,11 @@ The project compares the ARIMA and LSTM models based on RMSE, MAE, and MAPE. The
 ![RMSE](rmse.png)
 ![MAE](mae.png)
 
-### Conclusion
-Given the situation where the ARIMA model is predicting a flat line (constant value) and the LSTM model is yielding lower RMSE and MAE in most cases, the LSTM model appears to be the better choice.
-
 ### Key Points:
 *ARIMA Flat Line Prediction:* The flat line prediction from the ARIMA model suggests that it isn't capturing the underlying patterns in the data effectively. This might be due to improper parameter tuning, non-stationarity in the data, or the model being unsuitable for the dataset.
+
 *LSTM Performance:* The LSTM model, designed to capture both short-term and long-term dependencies in the data, seems to be performing better with lower RMSE and MAE in most cases, as shown by the performance metrics.
+
 Conclusion:
 Given the evidence, the LSTM model is likely the better option for forecasting stock prices in your dataset. It is capturing the underlying patterns better than the ARIMA model, as shown by the performance metrics. However, it is essential to continue experimenting and validating your models. Further hyperparameter tuning for LSTM, or exploring other architectures like GRU or more advanced models, may yield even better performance. On the ARIMA side, revisiting the parameters or considering more complex models like SARIMA or hybrid models that combine ARIMA and LSTM could also be beneficial.
 
